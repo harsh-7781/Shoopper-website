@@ -20,7 +20,7 @@ const LoginSignup = () => {
         console.log("Login Function Executed",formData);
 
         let responseData;
-        await fetch('http://localhost:4000/login',{
+        await fetch('https://shoopper-server.vercel.app/login',{
           method:'POST',
           headers:{
             Accept:'application/form-data',
@@ -42,7 +42,7 @@ const LoginSignup = () => {
       console.log("Signup Function Executed",formData);
 
       let responseData;
-      await fetch('http://localhost:4000/signup',{
+      await fetch('https://shoopper-server.vercel.app/signup',{
         method:'POST',
         headers:{
           Accept:'application/form-data',

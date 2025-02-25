@@ -1,7 +1,7 @@
 export const useCheckout = () =>{
     const loadRazorpay = async (amount) => {
         console.log("amount in frontend",amount);
-        const res = await fetch("http://localhost:4000/api/orders/create-order", {
+        const res = await fetch("https://shoopper-server.vercel.app/api/orders/create-order", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
         //   body: JSON.stringify({ amount }),
@@ -26,7 +26,7 @@ export const useCheckout = () =>{
           handler: async function (response) {
             console.log("handler in react",response);
             // Verify payment on backend
-            const verification = await fetch("http://localhost:4000/api/orders/verify-payment", {
+            const verification = await fetch("https://shoopper-server.vercel.app/api/orders/verify-payment", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(response),

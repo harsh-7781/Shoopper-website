@@ -16,7 +16,7 @@ const NewsLetter = () => {
 //     const handleSubmit = async (e) => {
 //         e.preventDefault();
 //         try {
-//             const response = await axios.post("http://localhost:4000/send-email", formData);
+//             const response = await axios.post("https://shoopper-server.vercel.app/send-email", formData);
 //             alert(response.data.message);
 //         } catch (error) {
 //             alert("Failed to send email.");
