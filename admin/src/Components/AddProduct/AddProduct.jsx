@@ -40,6 +40,7 @@ const AddProduct = () => {
       if(responseData.success)
       {
         product.image = responseData.image_url;
+        product.public_id = responseData.public_id;
         console.log(product);
         await fetch('https://shoopper-server.vercel.app/addproduct',{
           method:'POST',
