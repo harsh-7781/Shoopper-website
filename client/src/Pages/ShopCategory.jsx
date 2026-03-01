@@ -15,9 +15,9 @@ const ShopCategory = (props) => {
   // Price Ranges
   const priceRanges = [
     { label: "All", min: 0, max: Infinity },
-    { label: "$20-$40", min: 20, max: 40 },
-    { label: "$50-$60", min: 50, max: 60 },
-    { label: "$70-$100", min: 70, max: 100 },
+    { label: "Rs20-Rs40", min: 20, max: 40 },
+    { label: "Rs50-Rs60", min: 50, max: 60 },
+    { label: "Rs70-Rs100", min: 70, max: 100 },
   ];
 
   // Get sorting range, search query, and visible products for the selected category
